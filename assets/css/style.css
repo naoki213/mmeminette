@@ -662,6 +662,18 @@ body.is-menu-open .site-header { border-bottom-color: var(--c-line); }
   .value { grid-template-columns: 1fr; gap: 10px; }
 }
 
+.photo-band { margin: 0; }
+.photo-band img {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: 65% center;
+}
+@media (max-width: 760px) {
+  .photo-band img { aspect-ratio: 4 / 3; max-height: none; object-position: center; }
+}
+
 /* ---------- Business page ---------- */
 .biz-nav {
   display: grid;
