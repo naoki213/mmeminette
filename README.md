@@ -30,3 +30,9 @@ cd ..
 python3 -m http.server 8080
 # http://localhost:8080/mmeminette/ を開く
 ```
+
+## 公開・更新方法
+
+GitHub Pages は `gh-pages` ブランチから配信しています。
+`main` で修正したら、`git push origin main:gh-pages` で公開側にも反映してください。
+（Settings → Pages の Source を `main` / `/(root)` に切り替えれば、`main` への push だけで反映されるようになります）
