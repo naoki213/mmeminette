@@ -709,6 +709,20 @@ ul, ol { margin: 0; padding: 0; }
   border: 1px solid var(--c-line);
 }
 .biz-detail__figure svg { width: 56%; }
+.biz-detail__photo { margin: 0; }
+.biz-detail__photo img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  background: var(--c-bg-alt);
+}
+.biz-detail__photo figcaption {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: .06em;
+  color: var(--c-text-sub);
+}
 .biz-detail__num {
   display: block;
   font-family: var(--ff-en);
@@ -780,6 +794,7 @@ ul, ol { margin: 0; padding: 0; }
 @media (max-width: 900px) {
   .biz-detail { grid-template-columns: 1fr; }
   .biz-detail__visual { position: static; max-width: 200px; }
+  .biz-detail__visual:has(.biz-detail__photo) { max-width: 560px; }
 }
 
 /* ---------- Flow diagram ---------- */
