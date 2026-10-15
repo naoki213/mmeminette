@@ -49,6 +49,12 @@
     else if (mq.addListener) mq.addListener(onChange);
   }
 
+  /* Mail links: the address is joined here so it does not appear in the HTML */
+  document.querySelectorAll('[data-mail]').forEach(function (a) {
+    var parts = a.getAttribute('data-mail').split('|');
+    a.href = 'mailto:' + parts[0] + '@' + parts[1];
+  });
+
   /* Fade-in on scroll */
   var items = document.querySelectorAll('.reveal');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

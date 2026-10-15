@@ -455,7 +455,12 @@ body.is-menu-open .site-header { border-bottom-color: var(--c-line); }
   width: 200px;
   margin-top: 40px;
 }
-@media (max-width: 760px) { .intro__logo { width: 150px; margin-top: 28px; } }
+@media (max-width: 760px) {
+  .intro__logo { width: 150px; margin-top: 28px; }
+  .about-head { text-align: center; }
+  .about-head .eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; }
+  .about-head .intro__logo { margin-left: auto; margin-right: auto; }
+}
 
 /* ---------- Business list (HOME) ---------- */
 .biz-list { list-style: none; border-top: 1px solid var(--c-line); }
