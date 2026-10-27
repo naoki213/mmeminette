@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /docs/
 
-Sitemap: https://naoki213.github.io/mmeminette/sitemap.xml
+Sitemap: https://mmeminette.com/sitemap.xml
